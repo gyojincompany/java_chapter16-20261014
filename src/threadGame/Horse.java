@@ -32,6 +32,15 @@ public class Horse extends Thread { //경주마 클래스
 				distance = 100;
 			}
 			
+			//트랙 그래픽 표시
+			String track = "";
+			for(int i=0;i<distance;i=i+1) {
+				track = track + ">";
+			}
+			
+			System.out.println("[" + name + "]" + distance + "m" + track);
+			System.out.println("--------------------------------");
+			
 			try {
 				Thread.sleep(200); //게임이 너무 빨리 끝나지 않도록 0.2초 동안 잠깐 멈춤 추가
 			} catch (InterruptedException e) {
