@@ -33,7 +33,7 @@ public class Horse extends Thread { //경주마 클래스
 			}
 			
 			try {
-				Thread.sleep(500); //게임이 너무 빨리 끝나지 않도록 0.5초 동안 잠깐 멈춤 추가
+				Thread.sleep(200); //게임이 너무 빨리 끝나지 않도록 0.2초 동안 잠깐 멈춤 추가
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
